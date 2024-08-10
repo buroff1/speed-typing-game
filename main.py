@@ -113,12 +113,12 @@ def slider():
 # Main GUI configuration
 root = Tk()
 root.title("Speed Typing Test")
-root.iconbitmap('clock.ico')
+root.iconbitmap('images/clock.ico')
 root.geometry('800x680+610+130')
 root.config(bg='pale turquoise')
 root.resizable(0, 0)
 # Load the logo image with a resized version (smaller)
-logoImage = PhotoImage(file='logo.png').subsample(2, 2)  # Modify the subsample values to adjust size
+logoImage = PhotoImage(file='images/logo.png').subsample(2, 2)  # Modify the subsample values to adjust size
 
 # Place the logo in the center of the window
 logo = Label(root, image=logoImage, bg='pale turquoise')
@@ -151,9 +151,9 @@ wordEntry.focus_set()
 instruction = Label(root, text="Type Word And Press Enter", font=('Courier New', 28, 'bold'), bg='pale turquoise',
                     fg='red')
 instruction.place(x=120, y=550)
-sad = PhotoImage(file='sad.png')
-cool = PhotoImage(file='cool.png')
-happy = PhotoImage(file='happy.png')
+sad = PhotoImage(file='images/sad.png')
+cool = PhotoImage(file='images/cool.png')
+happy = PhotoImage(file='images/happy.png')
 emoji1Label = Label(root, bg='pale turquoise')
 emoji1Label.place(x=40, y=610)
 emoji2Label = Label(root, bg='pale turquoise')
